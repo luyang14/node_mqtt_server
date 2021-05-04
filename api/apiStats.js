@@ -15,4 +15,8 @@ router.get('/topicStats', (req, res) => {
     res.json(apiMsg(stats.getSubscribedTopics()));
 });
 
+router.get('/topicStats1', (req, res) => {
+    debug('GET /topicStats1');
+    res.json(apiMsg(stats.getSubscribedTopics()));
+});
 module.exports = router;
